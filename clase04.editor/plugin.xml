@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated clase04 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="clase04.presentation.Clase04ModelWizardID"
+            name="%_UI_Clase04ModelWizard_label"
+            class="clase04.presentation.Clase04ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Clase04ModelFile.gif">
+         <description>%_UI_Clase04ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated clase04 -->
+      <editor
+            id="clase04.presentation.Clase04EditorID"
+            name="%_UI_Clase04Editor_label"
+            icon="icons/full/obj16/Clase04ModelFile.gif"
+            extensions="clase04"
+            class="clase04.presentation.Clase04Editor"
+            contributorClass="clase04.presentation.Clase04ActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
